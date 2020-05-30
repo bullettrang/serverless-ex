@@ -1,0 +1,14 @@
+{
+  "name": "serverless-ex",
+  "version": "1.0.0",
+  "description": "serverless example",
+  "main": "index.js",
+  "scripts": {
+    "sls": "serverless"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "serverless": "^1.71.3"
+  }
+}
