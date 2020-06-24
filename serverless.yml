@@ -38,4 +38,7 @@ resources:
             KeyType: HASH
   Outputs:
     RestaurantsTableName:
-      Value: !Ref RestaurantsTable            
+      Value: !Ref RestaurantsTable
+      
+plugins:
+  - serverless-export-env                  
