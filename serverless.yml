@@ -7,6 +7,11 @@ custom:
 provider:
   name: aws
   runtime: nodejs12.x
+  
+  iamRoleStatements:
+    - Effect: Allow
+      Action: dynamodb:scan
+      Resource: !GetAtt RestaurantsTable.Arn  
 
 functions:
   get-index:
@@ -39,6 +44,6 @@ resources:
   Outputs:
     RestaurantsTableName:
       Value: !Ref RestaurantsTable
-      
+
 plugins:
   - serverless-export-env                  
